@@ -16,6 +16,9 @@
 		16C0128E261D75E400BF9D72 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16C0128C261D75E400BF9D72 /* LaunchScreen.storyboard */; };
 		16C01299261D75E400BF9D72 /* StudyEnglishTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C01298261D75E400BF9D72 /* StudyEnglishTests.swift */; };
 		16C012A4261D75E400BF9D72 /* StudyEnglishUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C012A3261D75E400BF9D72 /* StudyEnglishUITests.swift */; };
+		16C012BD261D7E7500BF9D72 /* WordGameViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16C012BC261D7E7500BF9D72 /* WordGameViewController.storyboard */; };
+		16C012C2261D846600BF9D72 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C012C1261D846600BF9D72 /* BaseViewController.swift */; };
+		16C012C7261D869F00BF9D72 /* WordGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C012C6261D869F00BF9D72 /* WordGameViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 		16C0129F261D75E400BF9D72 /* StudyEnglishUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StudyEnglishUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		16C012A3261D75E400BF9D72 /* StudyEnglishUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyEnglishUITests.swift; sourceTree = "<group>"; };
 		16C012A5261D75E400BF9D72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16C012BC261D7E7500BF9D72 /* WordGameViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WordGameViewController.storyboard; sourceTree = "<group>"; };
+		16C012C1261D846600BF9D72 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		16C012C6261D869F00BF9D72 /* WordGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordGameViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,9 +107,10 @@
 		16C0127D261D75E300BF9D72 /* StudyEnglish */ = {
 			isa = PBXGroup;
 			children = (
+				16C012BB261D7E2300BF9D72 /* ViewController */,
+				16C012BA261D7DFE00BF9D72 /* Storyboard */,
 				16C0127E261D75E300BF9D72 /* AppDelegate.swift */,
 				16C01280261D75E300BF9D72 /* SceneDelegate.swift */,
-				16C01282261D75E300BF9D72 /* ViewController.swift */,
 				16C01284261D75E300BF9D72 /* Main.storyboard */,
 				16C0128A261D75E400BF9D72 /* Assets.xcassets */,
 				16C0128C261D75E400BF9D72 /* LaunchScreen.storyboard */,
@@ -129,6 +136,24 @@
 				16C012A5261D75E400BF9D72 /* Info.plist */,
 			);
 			path = StudyEnglishUITests;
+			sourceTree = "<group>";
+		};
+		16C012BA261D7DFE00BF9D72 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				16C012BC261D7E7500BF9D72 /* WordGameViewController.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		16C012BB261D7E2300BF9D72 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				16C01282261D75E300BF9D72 /* ViewController.swift */,
+				16C012C1261D846600BF9D72 /* BaseViewController.swift */,
+				16C012C6261D869F00BF9D72 /* WordGameViewController.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,6 +259,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16C012BD261D7E7500BF9D72 /* WordGameViewController.storyboard in Resources */,
 				16C0128E261D75E400BF9D72 /* LaunchScreen.storyboard in Resources */,
 				16C0128B261D75E400BF9D72 /* Assets.xcassets in Resources */,
 				16C01286261D75E300BF9D72 /* Main.storyboard in Resources */,
@@ -261,7 +287,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16C012C2261D846600BF9D72 /* BaseViewController.swift in Sources */,
 				16C01289261D75E300BF9D72 /* StudyEnglish.xcdatamodeld in Sources */,
+				16C012C7261D869F00BF9D72 /* WordGameViewController.swift in Sources */,
 				16C01283261D75E300BF9D72 /* ViewController.swift in Sources */,
 				16C0127F261D75E300BF9D72 /* AppDelegate.swift in Sources */,
 				16C01281261D75E300BF9D72 /* SceneDelegate.swift in Sources */,
