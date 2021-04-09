@@ -17,26 +17,57 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jUy-Ud-nho">
-                                <rect key="frame" x="171" y="206" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZYj-Lk-gZk">
+                                <rect key="frame" x="0.0" y="44" width="414" height="754"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="linkColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="23n-Uq-tcI">
+                                <rect key="frame" x="0.0" y="815" width="414" height="47"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Start" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kte-v2-BcD">
+                                        <rect key="frame" x="8" y="6" width="397" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                <constraints>
+                                    <constraint firstItem="kte-v2-BcD" firstAttribute="top" secondItem="23n-Uq-tcI" secondAttribute="top" constant="6" id="C63-Qz-OQb"/>
+                                    <constraint firstItem="kte-v2-BcD" firstAttribute="leading" secondItem="23n-Uq-tcI" secondAttribute="leading" constant="8" id="VbZ-RY-RTp"/>
+                                    <constraint firstAttribute="bottom" secondItem="kte-v2-BcD" secondAttribute="bottom" constant="7" id="pIt-Ix-3XF"/>
+                                    <constraint firstAttribute="trailing" secondItem="kte-v2-BcD" secondAttribute="trailing" constant="9" id="pS6-no-Hrz"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Pux-VA-rOl"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="23n-Uq-tcI" firstAttribute="leading" secondItem="Pux-VA-rOl" secondAttribute="leading" id="CMg-VA-9No"/>
+                            <constraint firstItem="Pux-VA-rOl" firstAttribute="bottom" secondItem="23n-Uq-tcI" secondAttribute="bottom" id="Ifu-hf-wf9"/>
+                            <constraint firstItem="Pux-VA-rOl" firstAttribute="trailing" secondItem="23n-Uq-tcI" secondAttribute="trailing" id="o5J-vM-efR"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="baseView" destination="ZYj-Lk-gZk" id="F47-zH-Vsk"/>
+                        <outlet property="textField" destination="kte-v2-BcD" id="Axg-bt-rLz"/>
+                        <outlet property="toolbarView" destination="23n-Uq-tcI" id="Wyl-7x-cvK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WJJ-gW-trJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-365" y="13"/>
+            <point key="canvasLocation" x="-365.21739130434787" y="12.723214285714285"/>
         </scene>
     </scenes>
     <resources>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
